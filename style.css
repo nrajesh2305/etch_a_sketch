@@ -4,3 +4,10 @@ body
     padding: 0;
 }
 
+.title
+{
+    font-family: cursive;
+    font-weight: bolder;
+    padding-top: 10px;
+    font-size: larger;
+}

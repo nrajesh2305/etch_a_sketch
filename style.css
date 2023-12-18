@@ -45,9 +45,11 @@ body
     border-radius: 25px;
     margin-right: 25px;
     margin-bottom: 75px;
+    border-color: lightskyblue;
 }
 
-/* button.download-button:hover
+button.download-button:hover
 {
-
-} */
+    background-color: rgb(89, 140, 171);
+    transition: 0.25s;
+}

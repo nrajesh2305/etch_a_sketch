@@ -5,6 +5,16 @@ body
     overflow: hidden;
 }
 
+.canvas_container
+{
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
 .title
 {
     font-family: cursive;
@@ -19,7 +29,7 @@ body
 {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: auto;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -46,6 +56,7 @@ body
     margin-right: 25px;
     margin-bottom: 75px;
     border-color: lightskyblue;
+    position: absolute;
 }
 
 button.download-button:hover
@@ -53,3 +64,4 @@ button.download-button:hover
     background-color: rgb(89, 140, 171);
     transition: 0.25s;
 }
+

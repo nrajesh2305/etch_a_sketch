@@ -7,22 +7,10 @@ body
 
 .canvas_container
 {
-    /* display: flex;
     width: 50%;
     height: 100vh;
-    background-color: white; */
-    width: 50%;
-    height: 100vh;
-    display: grid;
-    
+    display: grid;   
 }
-
-
-
-/* .canvas_container:hover
-{
-    
-} */
 
 .title
 {

@@ -7,13 +7,21 @@ body
 
 .canvas_container
 {
-    display: flex;
+    /* display: flex;
     width: 50%;
     height: 100vh;
-    background-color: whitesmoke;
-    justify-content: center;
-    align-items: center;
+    background-color: white; */
+    width: 50%;
+    height: 100vh;
+    display: grid;
 }
+
+
+
+/* .canvas_container:hover
+{
+    
+} */
 
 .title
 {

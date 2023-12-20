@@ -1,6 +1,6 @@
 function populateBoard(size)
 {
-    let board = document.querySelector('canvas_container');
+    let board = document.querySelector('.canvas_container');
     board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 

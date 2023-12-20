@@ -34,12 +34,48 @@ body
     position: absolute;
 }
 
-.container_for_download
+.container_for_clear_button
 {
     display: flex;
     width: 100%;
     height: auto;
+    justify-content: flex-start;
+}
+
+.container_for_download
+{
+    display: flex;
+    width: 356px;
+    height: 106px;
+    margin-bottom: 75px;
+    margin-right: 25px;
+}
+
+button.download-button
+{
+    display: flex;
+    width: 356px;
+    height: 106px;
+    background-color: lightskyblue;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    border-radius: 25px;
+    margin-right: 25px;
+    margin-bottom: 75px;
+    border-color: lightskyblue;
+    position: absolute;
+}
+
+/* .container_for_download
+{
+    display: flex;
+    width: 356px;
+    height: 106px;
+    margin-right: 50px;
     justify-content: flex-end;
+
 }
 
 .download-button
@@ -57,7 +93,7 @@ body
     margin-bottom: 75px;
     border-color: lightskyblue;
     position: absolute;
-}
+} */
 
 button.download-button:hover
 {

@@ -20,6 +20,7 @@ body
     font-size: 30px;
     background-color: peachpuff;
     color: royalblue;
+    text-align: center;
 }
 
 .menu_container
@@ -34,7 +35,7 @@ body
     position: absolute;
 }
 
-.container_for_clear_button
+.container_for_grid_size_button
 {
     display: flex;
     width: 159px;
@@ -44,7 +45,7 @@ body
     margin-right: 70%;
 }
 
-button.clear-button
+#grid-size-button
 {
     background-color: white;
     color: red;
@@ -55,10 +56,11 @@ button.clear-button
     height: 46px;
 }
 
-button.clear-button:hover
+#grid-size-button:hover
 {
     background-color: rgb(189, 189, 189);
     transition: 0.25s;
+    cursor: pointer;
 }
 
 
@@ -89,6 +91,12 @@ button.download-button
     border-color: lightskyblue;
     position: absolute;
 }
+
+/* button.set_size
+{
+    display: flex;
+    width:
+} */
 
 /* .container_for_download
 {

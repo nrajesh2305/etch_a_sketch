@@ -17,8 +17,9 @@ function populateBoard(size)
 }
 
 
-function changeSize(size)
+function changeSize()
 {
+    let size = prompt("New Size of Grid: ");
     populateBoard(size);
 }
 
@@ -32,5 +33,17 @@ function generateRandomColor()
     }
     return color;
 }
+
+// let clear_button = document.querySelector('.clear-button');
+// clear_button.addEventListener('click', () => function()
+// {
+//     populateBoard(16);
+// });
+
+let resizeButton = document.querySelector("#grid-size-button");
+resizeButton.addEventListener("click", ()=>
+{
+    changeSize();
+});
 
 populateBoard(16);

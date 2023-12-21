@@ -10,7 +10,7 @@ function populateBoard(size)
         square.style.backgroundColor = "white";
         square.addEventListener("mouseover", ()=>
         {
-            square.style.backgroundColor = "black";
+            square.style.backgroundColor = generateRandomColor();
         });
         board.insertAdjacentElement('beforeend', square);
     }
@@ -20,6 +20,17 @@ function populateBoard(size)
 function changeSize(size)
 {
     populateBoard(size);
+}
+
+function generateRandomColor()
+{
+    let possibleChars = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+    let color = "#";
+    for(let i = 0; i < 6; i++)
+    {
+        color += possibleChars[Math.floor(Math.random() * possibleChars.length)];
+    }
+    return color;
 }
 
 populateBoard(16);

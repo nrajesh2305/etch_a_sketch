@@ -41,7 +41,7 @@ body
     width: 159px;
     height: 46px;
     position: absolute;
-    margin-bottom: 100%;
+    margin-bottom: 70%;
     margin-right: 70%;
 }
 
@@ -54,6 +54,7 @@ body
     border-width: 1px;
     width: 159px;
     height: 46px;
+    position: absolute;
 }
 
 #grid-size-button:hover
@@ -63,6 +64,33 @@ body
     cursor: pointer;
 }
 
+.container_for_clear_button
+{
+    display: flex;
+    width: 159px;
+    height: 46px;
+    position: absolute;
+    margin-bottom: 57.5%;
+    margin-right: 70%;
+}
+
+#clear-button
+{
+    background-color: rgb(55, 55, 55);
+    color: white;
+    border-color: white;
+    border-radius: 25px;
+    border-width: 1px;
+    width: 159px;
+    height: 46px;
+}
+
+#clear-button:hover
+{
+    background-color: rgb(82, 82, 82);
+    cursor: pointer;
+    transition: 0.25s;
+}
 
 .container_for_download
 {
@@ -91,39 +119,6 @@ button.download-button
     border-color: lightskyblue;
     position: absolute;
 }
-
-/* button.set_size
-{
-    display: flex;
-    width:
-} */
-
-/* .container_for_download
-{
-    display: flex;
-    width: 356px;
-    height: 106px;
-    margin-right: 50px;
-    justify-content: flex-end;
-
-}
-
-.download-button
-{
-    display: flex;
-    width: 356px;
-    height: 106px;
-    background-color: lightskyblue;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    border-radius: 25px;
-    margin-right: 25px;
-    margin-bottom: 75px;
-    border-color: lightskyblue;
-    position: absolute;
-} */
 
 button.download-button:hover
 {

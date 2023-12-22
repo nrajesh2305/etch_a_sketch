@@ -1,12 +1,21 @@
-function populateBoard(size)
+function clearDivs()
+{
+    let squares = document.querySelectorAll('.smallSquare');
+    squares.forEach((square) => square.remove());
+}
+
+
+function populateBoard()
 {
     let board = document.querySelector('.canvas_container');
+    let size = prompt("Size of Board: ");
+    board = document.querySelector('.canvas_container');
     board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
-
     for(let i = 0; i < size * size; i++)
     {
         let square = document.createElement("div");
+        square.className = "smallSquare";
         square.style.backgroundColor = "white";
         square.addEventListener("mouseover", ()=>
         {
@@ -14,13 +23,6 @@ function populateBoard(size)
         });
         board.insertAdjacentElement('beforeend', square);
     }
-}
-
-
-function changeSize()
-{
-    let size = prompt("New Size of Grid: ");
-    populateBoard(size);
 }
 
 function generateRandomColor()
@@ -34,16 +36,23 @@ function generateRandomColor()
     return color;
 }
 
-// let clear_button = document.querySelector('.clear-button');
-// clear_button.addEventListener('click', () => function()
-// {
-//     populateBoard(16);
-// });
 
 let resizeButton = document.querySelector("#grid-size-button");
+let board = document.querySelector('.canvas_container');
+let isClearOn = false;
+let isResize = false;
 resizeButton.addEventListener("click", ()=>
 {
-    changeSize();
+    isResize = true;
+    clearDivs();
+    populateBoard();
 });
 
-populateBoard(16);
+let clearButton = document.querySelector("#clear-button");
+clearButton.addEventListener("click", () => 
+{
+    clearDivs();
+    populateBoard();
+});
+
+populateBoard();

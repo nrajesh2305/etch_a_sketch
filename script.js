@@ -9,6 +9,20 @@ function populateBoard()
 {
     let board = document.querySelector('.canvas_container');
     let size = prompt("Size of Board: ");
+
+    while(size >= 100 || size <= 0)
+    {
+        if(size <= 0)
+        {
+            alert("Too small!");
+        }
+        else if(size >= 100)
+        {
+            alert("Too big!");
+        }
+        size = prompt("Size of Board: ");
+    }
+
     board = document.querySelector('.canvas_container');
     board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     board.style.gridTemplateRows = `repeat(${size}, 1fr)`;

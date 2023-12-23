@@ -50,9 +50,9 @@ function generateRandomColor()
     return color;
 }
 
-
 let resizeButton = document.querySelector("#grid-size-button");
 let board = document.querySelector('.canvas_container');
+let downloadButton = document.querySelector(".download-button");
 let isClearOn = false;
 let isResize = false;
 resizeButton.addEventListener("click", ()=>
@@ -68,5 +68,10 @@ clearButton.addEventListener("click", () =>
     clearDivs();
     populateBoard();
 });
+
+// downloadButton.addEventListener("click", () =>
+// {
+//     download();
+// });
 
 populateBoard();
